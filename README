@@ -1,0 +1,19 @@
+This is a port of the Jacchia 77 atmospheric model to Python
+It is based off of the Fortran version from
+http://nssdcftp.gsfc.nasa.gov/models/atmospheric/jacchia/jacchia-77/
+
+Instead of accessing global variables, the function returns a vector containing
+Altitude
+Temperature
+The number densities of...
+	N2
+	O2
+	O
+	Ar
+	he
+	H
+Mass of all above
+Molecular weight
+
+To use, simply include the j77sri.py file and call the function j77sri with the  max 
+altitude and exospheric temperature (Tinf), and it will return the values listed above
